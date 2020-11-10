@@ -1,0 +1,102 @@
+.ContactCard{
+    height: 150px;
+    width: 270px;
+    padding: 15px 17px;
+    border: 1px solid rgba(187,196,195,0.4);
+    border-radius: 4px;
+    background-color: $white;
+    cursor: pointer;
+    text-align: center;
+
+    &__Settings{
+        @include flexbox(space-between);
+
+        &--Right{
+            visibility: hidden;
+
+            :nth-child(2){
+                margin-left: 26px;
+            }
+        }
+
+        img:hover{
+            transform: scale(1.4);
+            transition: all ease-in-out .1s;
+        }
+    }
+
+    &__Image{
+        width: 66px;
+        height: 66px;
+        margin-top: -10px;
+        border: 3px solid rgba(187,196,195,0.3);
+        border-radius: 50%;
+    }
+
+    &__Name{
+        color: $submarine;
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    &:hover{
+        border: 1px solid $boston-blue;
+        .ContactCard__Settings--Right{
+            visibility: visible;
+        }
+    }
+
+    @include mq($until : mobile){
+        height: 60px;
+        width: 90vw;
+        padding: 7px 13px;
+        position: relative;
+        @include flexbox(flex-start);
+        align-items: center;
+    
+        &__Settings{
+            order: 2;
+            margin-left: auto;
+            justify-content: flex-start;
+            width: 120px;
+    
+            &--Right{
+                visibility: visible;
+                margin-left: 32px;
+                display: flex;
+    
+                :nth-child(2){
+                    margin-left: 32px;
+                }
+            }
+    
+            img:hover{
+                transform: none;
+            }
+        }
+    
+        &__Image{
+            width: 46px;
+            height: 46px;
+            margin-top: 0;
+            margin-right: 25px;
+        }
+    
+        &__Name{
+            color: $submarine;
+            font-size: 14px;
+            margin-top: 0;
+            font-weight: bold;
+            vertical-align: middle;
+            height: 14px;
+        }
+    
+        &:hover{
+            border: 1px solid rgba(187,196,195,0.4);
+            .ContactCard__Settings--Right{
+                visibility: visible;
+            }
+        }
+    }
+}

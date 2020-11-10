@@ -1,0 +1,217 @@
+.ContactDetails{
+    margin: auto;
+    margin-top: 57px;
+    max-width: 845px;
+    @include fade-in();
+
+    &__Image{
+        width: 186px;
+        height: 186px;
+        border-radius: 50%;
+        border: 3px solid rgba(187,196,195,0.3);
+        float: left;
+    }
+
+    &__MobileTitleBar{
+        display: none;
+    }
+
+    &__Data{
+        float: right;
+        width: 90%;
+        max-width: 630px;
+
+        &--Header{
+            height: 93px;
+            padding-left: 10px;
+            border-bottom: 2px solid $boston-blue;
+            @include flexbox(flex-start);
+            align-items: center;
+
+            p{
+                margin-left: 20px;
+                font-size: 28px;
+                font-weight: bold;
+                letter-spacing: 0;
+                line-height: 34px;
+                text-align: center;
+                color: $submarine;
+            }
+
+            div{
+                margin-left: auto;
+                margin-top: 10px;
+                :nth-child(2){
+                    margin-left: 44px;
+                }
+            }
+
+            img{
+                cursor: pointer;
+            }
+            img:hover{
+                transform: scale(1.4);
+                transition: all ease-in-out .1s;
+            }
+        }
+
+        &--Info{
+            padding-top: 70px;
+            padding-left: 65px;
+
+            &_Row{
+                display: flex;
+                margin-bottom: 73px;
+            }
+
+            &_Col1{
+                width: 92px;
+                margin-right: 33px;
+                display: flex;
+                align-items: center;
+                height: 19px;
+                img{
+                    margin-right: 15px;
+                }
+                p{
+                    color: $boston-blue;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+
+            &_Col2{
+                color: $submarine;
+            }
+
+            &_Numbers{
+                color: $submarine;
+                display: block;
+                div{
+                    margin-bottom: 40px;
+                    display: flex;
+                    :nth-child(1){
+                        padding-top: 2px;
+                        width: 69px;
+                        margin-right: 20px;
+                        font-size: 14px;
+                    }
+                    :nth-child(2){
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq($until : desktop){
+        &__Image{
+            margin: auto;
+            float: none;
+            display: block;
+        }
+        &__Data{
+            margin: auto;
+            float: none;
+        }
+    }
+
+    @include mq($until : mobile){
+        margin: 0;
+        position: relative;
+        padding-top: 49px;
+
+        &__Image{
+            display: none;
+        }
+
+        &__MobileTitleBar{
+            display: initial;
+            height: 98px;
+            width: 100%;
+            @include flexbox(flex-start);
+            align-items: center;
+            border-bottom: 2px solid $boston-blue;
+
+            img{
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                border: 3px solid rgba(187,196,195,0.3);
+                margin-right: 23px;
+            }
+
+            p{
+                color: $submarine;
+                font-size: 21px;
+                font-weight: bold;
+            }
+        }
+    
+        &__Data{
+    
+            &--Header{
+                height: 49px;
+                width: 100%;
+                padding: 0 30px;
+                border-bottom: 1px solid rgba(187,196,195,.4);
+                position: absolute;
+                top: 0;
+                left: 0;
+    
+                p{
+                    display: none;
+                }
+    
+                div{
+                    margin-left: auto;
+                    margin-top: 0;
+                    :nth-child(2){
+                        margin-left: 34px;
+                    }
+                }
+    
+                img{
+                    cursor: pointer;
+                    width: 16px;
+                }
+                img:hover{
+                    transform: none;
+                }
+            }
+    
+            &--Info{
+                padding-top: 23px;
+                padding-left: 25px;
+    
+                &_Row{
+                    display: block;
+                    margin-bottom: 50px;
+                }
+    
+                &_Col1{
+                    img{
+                        margin-right: 9px;
+                    }
+                }
+    
+                &_Col2{
+                    width: 100%;
+                    margin-left: 21px;
+                    margin-top: 12px;
+                }
+    
+                &_Numbers{
+                    margin-left: 21px;
+                    margin-top: 22px;
+                    div{
+                        margin-bottom: 32px;
+                        :nth-child(1){
+                            margin-right: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

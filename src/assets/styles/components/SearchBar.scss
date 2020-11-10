@@ -1,0 +1,30 @@
+.SearchBar{
+    width: 100%;
+    text-align: center;
+
+    input{
+        margin-top: 58px;
+        appearance: none;
+        outline: none;
+        width: 540px;
+        height: 60px;
+        border: 1px solid $gallery;
+        border-radius: 4px;
+        background-color: $white;
+        box-shadow: 0 2px 34px 0 $mercury;
+        background: url('../../images/searchIcon.svg') no-repeat;
+        background-position: left 23px center;
+        padding-left: 64px;
+        caret-color: $boston-blue;
+        color: $submarine;
+    }
+
+    @include mq($until : mobile){
+        input{
+            width: 325px;
+            height: 50px;
+            margin-top: 23px;
+            padding-left: 55px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.DeleteModal{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    @include flexbox(center);
+    align-items: center;
+    
+    &__Content{
+        height: 240px;
+        width: 480px;
+        border-radius: 4px;
+        background-color: $white;
+        box-shadow: 0 0 14px 0 rgba(99,109,255,0.27);
+        color: $submarine;
+
+        &--Header{
+            height: 59px;
+            border-bottom: 2px solid $alto;
+            padding-left: 31px;
+            padding-top: 20px;
+            font-weight: bold;
+        }
+
+        &--Main{
+            p{
+                text-align: center;
+                margin-top: 29px;
+                margin-bottom: 50px;
+            }
+
+            &_Buttons{
+                @include flexbox(space-between);
+                padding-left: 31px;
+                padding-right: 50px;
+
+                button{
+                    height: 42px;
+                    width: 160px;
+                    border-radius: 100px;
+                    background-color: $submarine;
+                    appearance: none;
+                    border: none;
+                    outline: none;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                :nth-child(2){
+                    float: right;
+                    background: linear-gradient(182.65deg, $monte-carlo 0%, $eastern-blue 99.98%, $eastern-blue 100%);
+                }
+            }
+        }
+    }
+
+    @include mq($until : mobile){
+        
+        &__Content{
+            height: 330px;
+            width: 315px;
+    
+            &--Main{
+                p{
+                    width: 255px;  
+                    margin: auto;     
+                    margin-top: 29px;     
+                }
+    
+                &_Buttons{
+                    margin-top: 50px;
+                    align-items: center;
+                    flex-direction: column-reverse;
+                    padding: 0;
+    
+                    :nth-child(2){
+                        float: none;
+                        background: linear-gradient(182.65deg, $monte-carlo 0%, $eastern-blue 99.98%, $eastern-blue 100%);
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

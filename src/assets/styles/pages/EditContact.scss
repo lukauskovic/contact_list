@@ -1,0 +1,336 @@
+.EditContact{
+    margin: auto;
+    margin-top: 57px;
+    max-width: 845px;
+    @include fade-in();
+
+    &__Image{
+        width: 186px;
+        float: left;
+
+        &--Placeholder{
+            cursor: pointer;
+            height: 186px;
+            width: 100%;
+            border: 3px solid rgba(187,196,195,0.3);
+            background-color: rgba(45,161,173,0.4);
+            border-radius: 50%;
+            @include flexbox(center);
+            align-items: center;
+        }
+
+        &--Uploaded{
+            position: relative;
+            img{
+                cursor: pointer;
+                height: 186px;
+                width: 186px;
+                border: 3px solid rgba(187,196,195,0.3);
+                border-radius: 50%;
+            }
+            div{
+                visibility: hidden;
+                font-size: 18px;
+                color: white;
+                position: absolute;
+                margin: auto;
+                transform: rotate(45deg) scale(2);
+                top: 88px;
+                left: 88px;
+                cursor: pointer;
+            }
+            &:hover{
+                div{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    &__Right{
+        width: 90%;
+        max-width: 630px;
+        float: right;
+
+        &--Header{
+            height: 94px;
+            @include flexbox(space-between);
+            align-items: center;
+            img{
+                cursor: pointer;
+            }
+            img:hover{
+                transform: scale(1.4);
+                transition: all ease-in-out .1s;
+            }
+
+            div{
+                cursor: pointer;
+                @include flexbox(flex-start);
+                color: $submarine;
+                font-size: 14px;
+                img{
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        &--LabelInfo{
+            padding-top: 19px;
+            margin-bottom: 22px;
+            display: flex;
+            border-top: 2px solid $boston-blue;
+            p{
+                color: $boston-blue; 
+                font-weight: bold;
+            }
+            img{
+                margin-right: 19px;
+            }
+        }
+
+        input{
+            height: 60px;
+            width: 300px;
+            border: 1px solid $submarine;
+            border-radius: 4px;
+            outline: none;
+            padding-left: 30px;
+            caret-color: $boston-blue;
+            color: $submarine;
+            margin-bottom: 30px;
+
+            &:focus{
+                border: 1px solid $boston-blue;
+            }
+
+            &::placeholder{
+                color: $submarine;
+            }
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+
+        &--Error{
+            input{
+                border-color: red !important;
+            }
+        }
+
+        &--SecondInput{
+            height: 60px !important;
+            width: 240px !important;
+            margin-left: 30px;
+        }
+
+        &--NumberGroup{
+            @include fade-in();
+            display: flex;
+            height: 60px;
+            margin-bottom: 30px;
+
+            .DeleteNumber{
+                margin-left: auto;
+                color: rgba(187,196,195,0.4);
+                border: 1px solid rgba(187,196,195,0.4);
+                font-size: 18px;
+                transform: rotate(45deg);
+
+                &:hover{
+                    transform: rotate(45deg) scale(1.1) !important;
+                    color : $boston-blue;
+                    border: 1px solid $boston-blue;
+                }
+            }
+        }
+
+        &--AddNumber{
+            @include flexbox(flex-start);
+            align-items: center;
+            color: $boston-blue;
+            font-size: 14px;
+            cursor: pointer;
+            width: 200px;
+            margin-top: 44px;
+
+            .AddNumber{
+                margin-right: 15px;
+                color : $boston-blue;
+                border: 1px solid $boston-blue;
+                font-size: 18px;
+            }
+        }
+
+        &--Buttons{
+            @include flexbox(space-between);
+            align-items: center;
+            margin-top: 104px;
+            margin-bottom: 74px;
+
+            button{
+                appearance: none;
+                cursor: pointer;
+                height: 42px;
+                width: 160px;
+                border-radius: 28.5px;
+                border: none;
+                background-color: $submarine;
+                font-size: 14px;
+                font-weight: bold;
+                color: $white;
+                outline: none;
+            }
+
+            :nth-child(2){
+                background-color: $boston-blue;
+            }
+        }
+
+        .Icon{
+            @include flexbox(center);
+            align-items: center;
+            align-self: center;
+            cursor: pointer;
+            line-height: 0 !important;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+
+            &:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .1s;
+            }
+        }
+    }
+
+    @include mq($until : desktop) {
+        &__Image{
+            margin: auto;
+            float: none;
+            display: block;
+        }
+        &__Right{
+            margin: auto;
+            float: none;
+        }
+    }
+
+    @include mq($until : tablet){
+        
+        &__Right--NumberGroup {
+            height: unset;
+            flex-wrap: wrap;
+            align-items: center;
+            input{
+                width: 100%;
+                margin: 0;
+            }
+
+            .Icon{
+                margin-top: 10px;
+            }
+        }
+        &__Right--SecondInput {
+            width: 85% !important;
+            margin: 0;
+            margin-top: 10px !important;
+        }
+    }
+
+    @include mq($until : mobile){
+        position: relative;
+        margin-top: 0;
+        padding-top: 49px;
+    
+        &__Image{
+            width: 156px;
+            height: 156px;
+            margin-top: 20px;
+            margin-bottom: 22px;
+            &--Placeholder{
+                height: 100%;
+                width: 100%;
+            }
+    
+            &--Uploaded{
+                img{
+                    height: 156px;
+                    width: 156px;
+                }
+                div{
+                    visibility: visible;
+                    top: 73px;
+                    left: 73px;
+                }
+            }
+        }
+    
+        &__Right{
+            width: 90%;
+    
+            &--Header{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 49px;
+                width: 100%;
+                padding: 0 30px;
+                border-bottom: 1px solid rgba(187,196,195,.4);
+
+                p{
+                    display: none;
+                }
+
+                :nth-child(1){
+                    width: 16px;
+                }
+
+                img:hover{
+                    transform: none;
+                }
+            }
+    
+            &--LabelInfo{
+                padding-top: 16px;
+                margin-bottom: 15px;
+                p{
+                    font-size: 14px;
+                }
+                img{
+                    margin-right: 15px;
+                }
+            }
+    
+            input{
+                height: 50px;
+                width: 100%;
+                margin-bottom: 26px;
+            }
+    
+            &--SecondInput{
+                height: 50px !important;
+                width: 85% !important;
+                margin-left: 30px;
+            }
+    
+            &--NumberGroup{
+                input{
+                    margin-bottom: 0;
+                }
+                margin-bottom: 40px;
+            }
+    
+            &--AddNumber{
+                margin-top: 40px;
+            }
+    
+            &--Buttons{
+                margin-top: 69px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.ContactsSwitch{
+    height: 120px;
+    width: 100%;
+    position: relative;
+    @include flexbox(center);
+    align-items: center;
+
+    &__Controls{
+        @include flexbox(center);
+        flex-direction: row;
+
+        p {
+            cursor: pointer;
+            height: 22px;
+            width: 110px;
+            color: $submarine;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 22px;
+        }
+        
+        p:nth-child(1){
+            text-align: end;
+        }
+
+        &--Active{
+            color: $boston-blue !important;
+        }
+
+        &--Divider{
+            box-sizing: border-box;
+            height: 15px;
+            width: 1px;
+            border: 1px solid $submarine;
+            background-color: $submarine;
+            margin: 0 30px;
+            align-self: center;
+        }
+    }
+
+    &__Rectangle{
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 1260px;
+        border: 1px solid $boston-blue;
+    }
+
+    @include mq($until : mobile){
+        height: 50px;
+    
+        &__Controls{   
+            p {
+                height: 17px;
+                width: 79px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    
+        &__Rectangle{
+            width: 85%;
+        }
+    }
+}

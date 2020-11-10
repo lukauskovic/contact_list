@@ -1,0 +1,120 @@
+[
+    {
+        "fullName" : "Addie Hernandez",
+        "favorite" : false,
+        "email" : "addie.hernandez@gmail.com",
+        "imageUrl" : "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+        "numbers" : [
+            {"HOME" : "+385 21 546 465"},
+            {"WORK" : "+385 21 147 258"},
+            {"CELL" : "+385 98 6547 541"},
+            {"HUSBAND" : "+385 99 1456 214"}
+        ]
+    },
+    {
+        "fullName" : "Oscar Arnold",
+        "favorite" : true,
+        "email" : "oscar.arnold@gmail.com",
+        "imageUrl" : "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb",
+        "numbers" : [
+            {"HOME" : "+385 21 546 581"},
+            {"WORK" : "+385 21 147 189"}
+        ]
+    },
+    {
+        "fullName" : "Isaiah McGuire",
+        "favorite" : true,
+        "email" : "isaiah.macguire@gmail.com",
+        "imageUrl" : "https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+        "numbers" : [
+            {"HOME" : "+385 21 524 465"},
+            {"WORK" : "+385 21 896 258"},
+            {"CELL" : "+385 98 6551 989"}
+        ]
+    },
+    {
+        "fullName" : "Ann Schneider",
+        "favorite" : false,
+        "email" : "ann.schneider@gmail.com",
+        "imageUrl" : "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+        "numbers" : [
+            {"HOME" : "+385 55 254 885"},
+            {"WORK" : "+385 31 568 444"},
+            {"CELL" : "+385 98 6547 152"}
+        ]
+    },
+    {
+        "fullName" : "Agnes Terry",
+        "favorite" : false,
+        "email" : "agnes.terry@gmail.com",
+        "imageUrl" : "https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+        "numbers" : [
+            {"HOME" : "+385 55 778 542"},
+            {"WORK" : "+385 31 345 345"},
+            {"CELL" : "+385 98 6535 152"}
+        ]
+    },
+    {
+        "fullName" : "Rose Bush",
+        "favorite" : false,
+        "email" : "rose.bush@gmail.com",
+        "imageUrl" : "https://images.unsplash.com/photo-1554384645-13eab165c24b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+        "numbers" : [
+            {"HOME" : "+385 11 453 385"},
+            {"WORK" : "+385 31 568 444"},
+            {"CELL" : "+385 21 3546 152"}
+        ]
+    },
+    {
+        "fullName" : "Duane Reese",
+        "favorite" : true,
+        "email" : "duane.reese@gmail.com",
+        "imageUrl" : "https://images.generated.photos/U8cesqJveqJoF1jpSveZNm377GxRQaGr0h82KKl14Cs/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA5/OTUxNDAuanBn.jpg",
+        "numbers" : [
+            {"HOME" : "+385 18 264 021"},
+            {"WORK" : "+385 31 654 468"},
+            {"CELL" : "+385 21 0014 258"}
+        ]
+    },
+    {
+        "fullName" : "Mae Chandler",
+        "favorite" : false,
+        "email" : "mae.chandler@gmail.com",
+        "imageUrl" : "https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&crop=faces&fit=crop&h=200&w=200",
+        "numbers" : [
+            {"HOME" : "+385 11 445 222"},
+            {"WORK" : "+385 31 568 364"},
+            {"CELL" : "+385 14 8888 152"}
+        ]
+    },
+    {
+        "fullName" : "Evelyn Weaver",
+        "favorite" : true,
+        "email" : "evelyn.weaver@gmail.com",
+        "imageUrl" : "https://images.generated.photos/m7QMg8FaMvmMjdGSGhoM5_uRYqCtbVz41gF4HYvbilc/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA5/NzQ2NjguanBn.jpg",
+        "numbers" : [
+            {"HOME" : "+385 11 445 222"},
+            {"WORK" : "+385 31 568 364"}
+        ]
+    },
+    {
+        "fullName" : "Catherine Moore",
+        "favorite" : false,
+        "email" : "catherine.moore@gmail.com",
+        "imageUrl" : "https://images.generated.photos/YwMI3XR53HT-iBcEgGmudt-RXoyegaFwSWEajDo4yfI/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA5/OTYwMTAuanBn.jpg",
+        "numbers" : [
+            {"HOME" : "+385 11 445 222"},
+            {"WORK" : "+385 31 568 364"}
+        ]
+    },
+    {
+        "fullName" : "Sam Manning",
+        "favorite" : false,
+        "email" : "sam.manning@gmail.com",
+        "imageUrl" : "https://uifaces.co/our-content/donated/IASPQqhS.jpg",
+        "numbers" : [
+            {"HOME" : "+385 11 445 222"},
+            {"WORK" : "+385 31 568 364"}
+        ]
+    }
+]
